@@ -1,0 +1,21 @@
+POST http://localhost:8000/api/create/
+Content-Type: application/json
+
+{
+    "redirect_link": "https://www.pythonando.com.br",
+    "token": "pythonando5",
+    "expiration_time": 60,
+    "max_uniques_cliques": 50
+}
+###
+PUT http://localhost:8000/api/13/
+Content-Type: application/json
+
+{
+    "redirect_link": "https://www.pythonando.com.br"
+}
+###
+GET http://localhost:8000/api/statistics/13/
+
+###
+GET http://localhost:8000/api/qrcode/13/
